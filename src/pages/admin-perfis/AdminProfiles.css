@@ -1,0 +1,248 @@
+.admin-perfis .admin-perfis-board{
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    margin: 10vh 9vw;
+    width: 82vw;
+}
+
+.admin-perfis .admin-perfis-board .perfis-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfis-header .add-profile{
+    border:none;
+    background-color: #E32929;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    color: #fff;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+.perfis-header .add-profile:hover{
+    filter: brightness(80%);
+}
+
+.perfis-header .search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.perfis-header .search-bar button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: #E32929;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.perfis-header .search-bar button:hover{
+    filter: brightness(80%);
+}
+
+.perfis-header .search-bar button:hover + input{
+    filter: brightness(80%);
+}
+
+.perfis-header .search-bar button,
+.perfis-header .search-bar input{
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+.perfis-header .search-bar input{
+    height: 2.5rem;
+    width: 30vw;
+    border: 1px solid #E32929;
+    border-radius: 0px 8px 8px 0px;
+    padding: 0rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.admin-perfis .admin-perfis-board .table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.75rem 0.5rem;
+    background-color: #E32929;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.3));
+}
+
+.admin-perfis .admin-perfis-board .table-header h2{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.table-body .profile-line-component .id-container,
+.table-header .id-header-container{
+    width: 20%;
+}
+
+.table-header .name-header-container,
+.table-body .profile-line-component .name-container{
+    width: 30%;
+
+}
+
+.profile-line-component .cpf-container,
+.table-header .cpf-header-container,
+.profile-line-component .cpf-container h2,
+.table-header .cpf-header-container h2,
+.profile-line-component .salary-container,
+.table-header .salary-header-container,
+.profile-line-component .salary-container h2,
+.table-header .salary-header-container h2{
+    display: none;
+}
+
+.table-header .role-header-container,
+.table-body .profile-line-component .role-container{
+    width: 30%;
+}
+
+.table-body .profile-line-component .profile-icons-container,
+.table-header .buttons-header-container{
+    width: 20%;
+}
+
+.admin-perfis-board .table-body{
+    height: 56vh;
+    padding: 0.5rem 0rem;
+    overflow: hidden;
+
+    position: relative;
+    z-index: 0;
+}
+
+.admin-perfis-board .table-footer{
+    margin-top: 0.5rem;
+}
+
+.admin-perfis-board .table-footer .footer-button{
+    width: 3rem;
+    height: 3rem;
+    background-color: #E32929;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-perfis-board .table-footer .footer-button:hover{
+    filter: brightness(80%);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-perfis-board .table-footer .footer-button:disabled{
+    filter:contrast(0.5) saturate(0.8);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-perfis .loading{
+    border: 4px solid #FFB80E;
+    border-top: 4px solid #E32929;
+}
+
+.admin-perfis .loading-container{
+    height: 48vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .perfis-header .search-bar input{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 768px) { 
+    .perfis-header .search-bar input{
+        width: 17.5vw;
+    }
+}
+
+@media (min-width: 992px) { 
+    .admin-perfis .admin-perfis-board .table-header{
+        padding: 0.75rem 2rem;
+    }
+
+    .perfis-header .search-bar input{
+        width: 12.5vw;
+    }
+
+    .admin-perfis .admin-perfis-board{
+        min-height: 90vh;
+        position: relative;
+        z-index: 0;
+        margin: 5vh 16vw;
+        padding: 5vh 0vh;
+        width: 68vw;
+    }
+
+    .profile-line-component .cpf-container,
+    .table-header .cpf-header-container,
+    .profile-line-component .cpf-container h2,
+    .table-header .cpf-header-container h2,
+    .profile-line-component .salary-container,
+    .table-header .salary-header-container,
+    .profile-line-component .salary-container h2,
+    .table-header .salary-header-container h2{
+        display: flex;
+    }
+
+    .table-header .id-header-container{
+        width: 10%;
+    }
+    .table-body .profile-line-component .id-container,
+    .table-body .id-header-container{
+        width: 10%;
+    }
+
+    .table-body .profile-line-component .name-container,
+    .table-header .name-header-container{
+        width: 20%;
+    }
+    
+    .table-header .cpf-header-container{
+        width: 20%;
+    }
+    
+    .table-body .profile-line-component .role-container,
+    .table-header .role-header-container{
+        width: 20%;
+    }
+    
+    .table-body .profile-line-component .salary-container,
+    .table-header .salary-header-container{
+        width: 20%;
+    }
+    
+    .table-body .profile-line-component .profile-icons-container,
+    .table-header .buttons-header-container{
+        width: 10%;
+    }
+    
+}
+
+@media (min-width: 1200px) { 
+    
+}

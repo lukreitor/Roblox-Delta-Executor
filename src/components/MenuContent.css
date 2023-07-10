@@ -1,0 +1,35 @@
+.menu-content-component{
+    width: 95%;
+    margin: 0.5rem auto;
+    padding: 1.2rem 1rem;
+    background-color: #E32424;
+    border-radius: 2rem;
+    border: none;
+}
+
+.menu-content-component h3{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.menu-content-component.activeComponent{
+    background-color: #FFB80E;
+}
+
+.menu-content-component.activeComponent h3{
+    color: #000;
+}
+
+.menu-content-component .icons .icon-circle{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 0.75vw;
+}
+
+.menu-content-component .icons .icon-circle:hover{
+    transform: scale(1.1);
+    filter: brightness(90%);
+}

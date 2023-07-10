@@ -1,0 +1,12 @@
+.waiter{
+    background-color: #E9DEDE;
+    height: 100vh;
+}
+
+.waiter .table-container{
+    padding: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

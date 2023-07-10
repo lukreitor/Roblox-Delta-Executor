@@ -1,0 +1,76 @@
+.table-component{
+    background-color: #FFB80E;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.table-component .btn-outline,
+.table-component .btn-red{
+    width: 100%;
+    padding: 0.625rem 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+.table-component .btn-outline{
+    border: 2px solid #813531;
+    color: #813531;
+    background-color: transparent;
+}
+
+.table-component .btn-red{
+    border: 2px solid #E32929;
+    color: #fff;
+    background-color: #E32929;
+}
+
+.table-component .btn-outline:hover,
+.table-component .btn-red:hover{
+    cursor: pointer;
+}
+
+.table-component .btn-outline:hover{
+    background-color: #813531;
+    color: #fff;
+}
+
+.table-component .btn-red:hover{
+    filter: brightness(80%);
+}
+
+.modal-footer button.delTable,
+.modal-footer button.cancel,
+.modal-footer button.genPass,
+.modal-footer button.apagar,
+.modal-footer button.editar{
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.3));
+}
+
+.modal-footer button.delTable:hover,
+.modal-footer button.cancel:hover,
+.modal-footer button.genPass:hover,
+.modal-footer button.apagar:hover,
+.modal-footer button.editar:hover{
+    filter: brightness(80%);
+}
+
+.modal-footer button.delTable,
+.modal-footer button.apagar{
+    background-color: #E32929;
+    color: #fff;
+}
+
+.modal-footer button.cancel{
+    background-color: #ccc;
+}
+
+.modal-footer button.genPass,
+.modal-footer button.editar{
+    background-color: #90EE90;
+}

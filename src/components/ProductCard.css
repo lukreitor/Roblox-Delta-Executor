@@ -1,0 +1,96 @@
+.product-card .card-top{
+    background-color: #E1E1E1;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    height: 20vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card .card-top img{
+    min-height: 20vh;
+    height: auto;
+    min-width: 100%;
+}
+
+.product-card{
+    background-color: #FFB80E ;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.product-card .card-data{
+    padding: 0.5rem 5%;
+    height: 20vh;
+}
+
+.product-card .card-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+
+.product-card .card-title h2{
+    font-size: 1.4rem;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.product-card .card-title h2:first-child{
+    font-family: 'Space Mono';
+    font-size: 1.45rem;
+}
+
+.product-card .card-desc{
+    font-size: 0.95rem;
+    text-align: start;
+}
+
+.product-card .card-ing-car{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.product-card .card-ing-car .ingredients{
+    font-size: 0.75rem;
+
+    margin: 0px;
+}
+
+.product-card .card-ing-car button{
+    width: 30%;
+    border: none;
+    background-color: #813531;
+    color: #FFFFFF;
+    border-radius: 0.825rem;
+    font-weight: medium;
+
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    min-height: 5vh;
+}
+
+.product-card .btn-order{
+    background-color: #E32929;
+    border: none;
+    min-height: 7vh;
+    color: #FFFFFF;
+    border-radius: 0.825rem;
+    font-weight: medium;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.product-card .card-ing-car button,
+.product-card .btn-order{
+    transition: all 0.4s;
+}
+
+.product-card .card-ing-car button:hover,
+.product-card .btn-order:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(80%);
+}

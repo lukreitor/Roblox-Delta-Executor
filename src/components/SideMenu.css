@@ -1,0 +1,229 @@
+.menu-container-all{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    transition: z-index 0s ease-in-out 1s;
+}
+
+.menu-container-all.change{
+    z-index: 1;
+    width: 100%;
+}
+
+.side-menu-container{
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.side-menu-container.change{
+    display: flex;
+}
+
+.side-menu-container .side-menu{
+    background-color: #E52424;
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.1s ease-in-out;
+
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.side-menu-container.change .side-menu{
+    z-index: 1;
+    left: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-menu-container.change .side-menu:after{
+    position: absolute;
+    content: '';
+    width: 35vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-menu-container .side-menu .logo{
+    width: auto;
+    height: 10vh;
+}
+
+.side-menu-container .side-menu .links-container a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-menu-container .side-menu .links-container .side-menu-content{
+    margin-left: 1rem;
+}
+
+.side-menu-container .side-menu .links-container a.active{
+    color: #E52424;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.side-menu-container .app-bg{
+    z-index: 1;
+    background-color: transparent;
+    width: 30vw;
+    position: relative;
+    margin-left: 70vw;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.side-menu-container.change .app-bg{
+    transition: all 0.3s ease-in-out;
+}
+
+
+.side-menu-container .app-bg .circle{
+    position: absolute;
+    z-index: 3;
+    clip-path: circle(50% at 0 50%);
+    background-color: #E52424;
+    width: 20vw;
+    height: 20vw;
+    top: 50%;
+    right: 80vw;
+
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-perfis .side-menu-container .app-bg .circle{
+    right: 82vw;
+}
+
+.side-menu-container .app-bg .circle .seta{
+    transform: rotate(180deg);
+    position: relative;
+}
+
+.side-menu-container .app-bg .circle.opened{
+    transform: rotate(180deg);
+    background: #E9DEDE;
+    right: 30vw;
+
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+    .side-menu-container .app-bg .circle .seta{
+        scale: 2;
+        margin-left: 2vw;
+    }
+}
+
+@media (min-width: 992px) { 
+    .side-menu-container .app-bg{
+        display: none;
+    }
+
+    .side-menu-container .side-menu{
+        left: 0;
+        width: 6vw;
+        overflow: hidden;
+        border-radius: 0rem 1rem 1rem 0px;
+    }
+
+    .side-menu-container .side-menu:hover{
+        width: 15vw;
+    }
+
+    .side-menu-container.change .side-menu:after{
+        width: 0vw;
+    }
+    
+
+    .side-menu-container .side-menu .links-container .side-menu-content{
+        display: block;
+        width: 0;
+        overflow: hidden;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    .side-menu-container .side-menu:hover .links-container .side-menu-content{
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+
+    .side-menu-container .side-menu:hover .links-container a.active{
+        color: #E52424;
+        filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.3));
+    }
+
+    .side-menu-container .side-menu:hover .links-container a:hover{
+        filter: brightness(80%);
+    }
+
+    .side-menu-container .side-menu .logo{
+        width: auto;
+        height: 6vh;
+    }
+
+    .side-menu-container .side-menu .links-container a.active::before{
+        width: 0%;
+    }
+
+    .side-menu-container .side-menu .links-container a.active{
+        background-color: #E9DEDE;
+        padding: 1rem 0.5rem;
+        position: relative;
+        border-radius: 50% 0px 0px 50%;
+    }
+
+    .side-menu-container:hover .side-menu .links-container a.active{
+        border-radius: 2rem 0px 0px 2rem;
+    }
+
+    .side-menu-container .side-menu .links-container a.active:after{
+        background-color: #E9DEDE;
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        left: 100%;
+    }
+
+    .side-menu-container .side-menu:hover .links-container a{
+        align-items: start;
+        width: 100%;
+    }
+    
+    .side-menu-container .side-menu:hover .links-container a:not(.active){
+        margin-left: 12%;
+    }
+    
+}
+
+@media (min-width: 1200px) { 
+
+}

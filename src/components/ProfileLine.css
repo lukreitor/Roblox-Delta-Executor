@@ -1,0 +1,77 @@
+.profile-line-component{
+    background-color: #FFB80E;
+    padding: 0.75rem 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+    height: 8vh;
+}
+
+.profile-line-component h2{
+    font-size: 1.3rem;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.profile-line-component .icon-circle{
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    background-color: #e32424;
+    margin-left: 0.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+.profile-line-component .icon-circle:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.profile-line-component .id-container{
+    width: 10%;
+}
+
+.profile-line-component .name-container{
+    width: 20%;
+
+}
+
+.profile-line-component .cpf-container{
+    width: 20%;
+}
+
+.profile-line-component .role-container{
+    width: 20%;
+}
+
+.profile-line-component .salary-container{
+    width: 20%;
+}
+
+.profile-line-component .cpf-container h2,
+.profile-line-component .role-container h2,
+.profile-line-component .salary-container h2{
+    font-weight: 400;
+}
+
+.profile-line-component .salary-container h2:before{
+    content: 'R$';
+}
+
+.profile-line-component .salary-container h2:after{
+    content: ',00';
+}
+
+.modal-content .radio-role{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 3rem;
+}
+
+@media (min-width: 768px) { 
+    .profile-line-component{
+        padding: 0.75rem 2rem;
+    }
+}

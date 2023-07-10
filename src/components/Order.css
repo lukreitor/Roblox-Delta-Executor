@@ -1,0 +1,79 @@
+*{
+    transition: all 0.3s ease-in-out;
+}
+
+/* width */
+.order-component .body::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.order-component{
+    --fundo: #B6CBF3;
+    --btn: #E32929;
+    --btn-text: #fff;
+    --text: #000;
+    height: 40vh;
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.4))
+}
+
+.order-component.normal{
+    --fundo: #FFB80E;
+}
+
+.order-component.urgente{
+    --fundo: #E32929;
+    --btn: #FFB80E;
+    --btn-text: #000;
+    --text: #fff;
+}
+
+.order-component .header{
+    background-color: #E32929;
+    color: #fff;
+    border-radius: 16px 16px 0px 0px;
+    height: 10vh;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.order-component .header h1{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.order-component .header h2{
+    font-size: 1.35rem;
+}
+
+.order-component .body,
+.order-component .footer{
+    background-color: var(--fundo);
+    color: var(--text);
+}
+
+.order-component .body h3{
+    font-size: 1.325rem;
+}
+
+.order-component .body{
+    color: var(--text);
+    overflow: scroll;
+}
+
+.order-component .footer{
+    border-radius: 0px 0px 16px 16px;
+    height: 9vh;
+}
+
+.order-component .footer button{
+    border: none;
+    background-color: var(--btn);
+    color: var(--btn-text);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.4);
+}
+
+.order-component .footer button:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}

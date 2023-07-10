@@ -1,0 +1,47 @@
+:root{
+    --primary: #e32929;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filter-bg ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--white);
+    width:max-content; 
+    max-width: 100%; 
+    white-space:nowrap;
+    border-radius: 0.5rem;
+    margin: 3vh 0vh;
+}
+
+.filter-bg li{
+    display: inline;
+    padding: 0.4rem 1rem;
+    list-style: none;
+    color: var(--primary);
+    border-radius: 0.5rem;
+    transition: 0.4s all ease-in-out;
+}
+
+.filter-bg li:not(:last-child){
+    margin-right: 0.25rem;
+}
+
+.filter-bg li:hover,
+.filter-bg li.active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.filter-bg li:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}

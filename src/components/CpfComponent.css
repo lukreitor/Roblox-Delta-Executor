@@ -1,0 +1,40 @@
+.modal-content .products-list p{
+    font-size: 1.125rem;
+}
+
+.modal-content .products-list{
+    height: 42vh;
+
+    overflow: auto;
+
+    background: #813531;
+
+    border-radius: 1rem;
+
+    box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.3);
+
+}
+
+.modal-content .products-content{
+    height: 94%;
+    width: 98%;
+    margin: auto;
+
+    border-radius: 1rem;
+}
+
+.modal-content .products-content .data-container{
+    padding: 0.75rem;
+    background-color: #FFB80E;
+
+    color: #202020;
+    border-radius: 1rem;
+
+    margin: 0.5rem 0;
+    border: none;
+}
+
+.data-container .qtd{
+    font-weight: bold;
+    font-size: 1.5rem;
+}

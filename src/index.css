@@ -1,0 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+input:focus,
+textarea:focus{
+  outline: none;
+}

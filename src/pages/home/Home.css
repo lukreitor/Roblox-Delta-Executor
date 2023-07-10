@@ -1,0 +1,190 @@
+*:not(input){
+    user-select: none;
+}
+
+.home{
+    background-color: #E32929;
+    position: relative;
+}
+
+.home .order{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: -85.1vw;
+    width: 100vw;
+
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+
+    transition: all 0.4s ease-in-out;
+}
+
+.home .order.open{
+    right: 0vw;
+}
+
+.home .order .car{
+    height: 80vh;
+    width: 85vw;
+    background-color: #982121;
+    border-radius: 1rem 1rem 0 1rem;
+}
+
+.home .order .car-container{
+    width: 100%;
+    height: 100%;
+}
+
+
+div.itens{
+    width: 95%;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.home .pedir{
+    background-color: transparent;
+    border: 2px solid #f2f3f4;
+    color: #f2f3f4;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.home .pedir:hover{
+    color:#982121;
+    background-color: #f2f3f4;
+}
+
+.home .icon{
+    height: 7.5vh;
+    background-color: #982121;
+    width: 15vw;
+    margin-top: 5vh;
+    border: none;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.home .bg-nav{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.home .wave-container{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 80vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.home .slogan{
+    font-weight: 400;
+    margin: 0;
+
+    color: #202020;
+}
+
+.home .slogan span{
+    color: #E32929;
+
+    animation: 1.5s alternate infinite pisca;
+}
+
+@keyframes pisca{
+    0%{
+        color: #E32929;
+    } 100%{
+        color: #202020
+    }
+}
+
+.home .lanche{
+    transform: scale(0.6);
+    filter: drop-shadow(0px 0px 15px rgba(0,0,0,0.3));
+
+    position: relative;
+}
+
+.home .wave{
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    overflow-x: hidden;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.home .cardapio-title{
+    margin: 12vh 0vh 0vh 0vh;
+}
+
+.loading{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 5vh;
+    height: 5vh;
+    background-color: transparent;
+    border: 4px solid #f2f3f4;
+    border-top: 4px solid #FFB80E;
+    border-radius: 100%;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.4));
+
+    animation: loading 1s infinite ease-in-out;
+}
+
+@keyframes loading {
+    0%{
+        rotate: 0;
+    } 100%{
+        rotate: 360deg;
+    }
+}
+
+@media (min-width: 576px) {
+    .home .lanche{
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 768px) { 
+    .home .lanche{
+        transform: scale(0.85);
+    }
+
+    .home .wave{
+        bottom: -10%;
+    }
+}
+
+@media (min-width: 992px) { 
+    .home .lanche{
+        transform: scale(1);
+    }
+
+    .home .order{
+        right: -25.1vw;
+        width: 29vw;
+    }
+    
+    .home .order .car{
+        height: 70vh;
+        width: 25vw;
+    }
+    
+    .home .icon{
+        width: 4vw;
+    }
+
+    .home .order .itens{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .home .lanche{
+        transform: scale(1);
+    }
+}

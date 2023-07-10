@@ -1,0 +1,26 @@
+.form-component{
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+    height: 5vh;
+    transition: 0.3s all ease-in-out;
+    padding: 0px 4px;
+    font-size: 1.1rem;
+}
+
+.form-component:hover{ 
+    cursor:text;
+    filter: brightness(80%);
+}
+
+.invalid{
+    border: 3px solid #FFB80E;
+}
+
+.valid{
+    border: 3px solid #466d1d;
+}
+
+.form-component:focus{
+    border-style: none;
+}
+
